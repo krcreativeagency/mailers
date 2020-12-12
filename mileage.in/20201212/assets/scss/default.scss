@@ -1,0 +1,117 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap");
+
+body {
+  font-family: "Andika New Basic", sans-serif;
+  background-color: #f5f5f5;
+  .body {
+    max-width: 650px;
+    margin: 20px auto;
+    transition: linear 0.5s;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 10px;
+    div.simple {
+      img {
+        width: 100%;
+      }
+    }
+    div.logo {
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+    div.play {
+      div.cover {
+        position: relative;
+        &:hover {
+          div.button {
+            opacity: 1;
+            background-color: rgba(255, 255, 255, 0.6);
+          }
+        }
+        img.main {
+          width: 100%;
+        }
+        div.button {
+          cursor: pointer;
+          opacity: 0.5;
+          position: absolute;
+          display: grid;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          transition: all 0.5s linear;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.2);
+          img {
+            width: 75px;
+            display: block;
+            margin: auto;
+          }
+        }
+      }
+    }
+    div.content {
+      padding: 50px 40px;
+      h1 {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-weight: 400;
+        line-height: 180%;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+        strong {
+          font-weight: 700;
+          font-size: 18px;
+          color: rgba(0, 0, 0, 0.8);
+        }
+      }
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.5s linear;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 15px 25px;
+        padding-bottom: 16px;
+        letter-spacing: 1px;
+        border: 0;
+        border-radius: 5px;
+        font-weight: 700;
+        width: 95px;
+        display: block;
+        margin: 10px auto;
+        margin-top: 50px;
+        text-align: center;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+    div.footer {
+      padding: 50px;
+      border-top: 1px solid #cccccc6b;
+      p {
+        font-weight: 400;
+        line-height: 180%;
+        font-size: 15px;
+        text-align: center;
+      }
+      div.social {
+        img {
+          width: 40px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
